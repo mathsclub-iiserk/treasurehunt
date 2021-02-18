@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Linden Hill';
+    src: url("fonts/LindenHill-webfont.eot");
+    src: url("fonts/LindenHill-webfont.woff") format("woff"), 
+         url("fonts/LindenHill-webfont.ttf") format("truetype"),
+         url("fonts/LindenHill-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Linden Hill';
+    src: url("fonts/LindenHill-Italic-webfont.eot");
+    src: url("fonts/LindenHill-Italic-webfont.woff") format("woff"), 
+         url("fonts/LindenHill-Italic-webfont.ttf") format("truetype"),
+         url("fonts/LindenHill-Italic-webfont.svg") format("svg");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url("fonts/GoudyStM-webfont.eot");
+    src: url("fonts/GoudyStM-webfont.woff") format("woff"), 
+         url("fonts/GoudyStM-webfont.ttf") format("truetype"),
+         url("fonts/GoudyStM-webfont.svg") format("svg");
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sorts Mill Goudy';
+    src: url("fonts/GoudyStM-Italic-webfont.eot");
+    src: url("fonts/GoudyStM-Italic-webfont.woff") format("woff"), 
+         url("fonts/GoudyStM-Italic-webfont.ttf") format("truetype"),
+         url("fonts/GoudyStM-Italic-webfont.svg") format("svg");
+    font-style: italic;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background: #ffffff;
+    font-family: sans-serif, monospace;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.global-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+}
+
+.title-box {
+    margin: 0.2em 0.5em;
+    max-width: 100vw;
+    text-align: center;
+    
+    font-family: 'Linden Hill', serif, monospace;
+    /* font-weight: bold; */
+    font-size: 5em;
+    color: #333333;
+
+    max-width: 100%;
+}
+
+.button {
+    padding: 0.5em 1em;
+    outline-style: solid;
+    outline-color: #999999;
+    outline-width: 2px;
+
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    outline-color: #000000;
+    background: #000000;
+    color: #ffffff;
+}
+
+.button:active {
+    outline-color: #ffffff;
+
+}
+
+.textblock {
+    font-family: 'Sorts Mill Goudy', serif, monospace;
+    font-size: 1.2em;
+    width: 60%;
+    max-width: 75ch;
+    margin: 1em;
+}
+.text-center {
+    text-align: center;
+}
+
+.answer-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.answer-form input[type=text] {
+    font-size: 1.2em;
+    font-family: monospace;
+    width: 25ch;
+    padding: 0.5em;
+    margin: 0 10px;
+}
+.answer-form input[type=text]:focus {
+}
+
+@media screen and (max-width:350px) {
+    .title-box {
+        font-size: 2.5em !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .title-box {
+        margin-top: 4em;
+        font-size: 3em;
+        padding: 0;
+    }
+}
