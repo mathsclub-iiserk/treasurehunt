@@ -93,6 +93,10 @@ html {
 
 }
 
+.spacer {
+    height: 16px;
+}
+
 .textblock {
     font-family: 'Sorts Mill Goudy', serif, monospace;
     font-size: 1.2em;
