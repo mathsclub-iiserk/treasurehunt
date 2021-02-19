@@ -18,22 +18,9 @@
     <div class="spacer"></div>
     <div class="answer-form">
         <input type="text" name="answer" id="answer">
-        <div class="button" onclick="validate()">Submit</div>
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
     </div>
+    <script src="../validate.js"></script>
 </div>
-<script type="text/javascript" charset="utf-8">
-    function validate() {
-        var answer = document.getElementById("answer").value;
-        answer = answer.trim().toLowerCase();
-        if (answer.length == 0) {
-            return;
-        }
-        var title = document.title;
-        console.log(title + answer);
-        var hash = sha1(title + answer);
-        console.log(hash);
-        window.location.href = "../" + hash + "/";
-    }
-</script>
 </body>
 </html>

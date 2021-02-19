@@ -63,7 +63,6 @@ html {
     text-align: center;
     
     font-family: 'Linden Hill', serif, monospace;
-    /* font-weight: bold; */
     font-size: 5em;
     color: #333333;
 
@@ -80,8 +79,9 @@ html {
     font-size: 1.2em;
     color: #000000;
     text-transform: uppercase;
-}
 
+    transition: 75ms background ease-out;
+}
 .button:hover {
     outline-color: #000000;
     background: #000000;
@@ -113,14 +113,18 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    width: 50ch;
+    max-width: 80%;
 }
-.answer-form input[type=text] {
+.answer-form input[type="text"] {
+    display:block;
+    width: 100%;
+    margin-right: 10px;
+    padding: 0.5em;
+    border: solid #999999 1px;
     font-size: 1.2em;
     font-family: monospace;
-    width: 25ch;
-    padding: 0.5em;
-    margin: 0 10px;
-    border: solid #999999 1px;
 }
 .answer-form input[type=text]:focus {
     border: solid #000000 1px;
@@ -140,6 +144,6 @@ html {
         flex-direction: column;
     }
     .answer-form * {
-        margin: 10px;
+        margin: 5px;
     }
 }
