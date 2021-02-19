@@ -25,6 +25,6 @@ function validate() {
     if (solutions.includes(saltedHash)) {
         window.location.href = "../" + hash + "/";
     } else {
-        alert("Try again!");
+        input.classList.add("retry");
     }
 }

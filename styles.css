@@ -154,6 +154,10 @@ body {
 .answer-form input[type=text]:focus {
     border: solid #000000 1px;
 }
+.answer-form input[type=text].retry {
+    border: solid #dd1122 1px;
+    box-shadow: 0 0 4px 0 #aa0022;
+}
 
 @media screen and (max-width:350px) {
     .title-box {
