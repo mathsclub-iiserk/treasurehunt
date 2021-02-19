@@ -73,15 +73,22 @@ body {
     max-width: 100%;
 }
 
-.credits {
+.links-bottom {
     position: absolute;
     bottom: 8px;
-    right: 8px;
-    color: #999999;
-    cursor: pointer;
+    right: 12px;
+    max-width: 70%;
+    text-align: center;
 }
-.credits:hover {
+.links-bottom a {
+    font-size: 1.2em;
+    color: #999999;
+    font-style: italic; 
+    margin: 0 8px;
+}
+.links-bottom a:hover {
     color: #000000;
+    cursor: pointer;
 }
 
 .button {
@@ -163,5 +170,13 @@ body {
     }
     .answer-form * {
         margin: 5px;
+    }
+    .links-bottom {
+        position: relative;
+        bottom: 16px;
+        right: auto;
+    }
+    .links-bottom a {
+        font-size: 1em;
     }
 }
