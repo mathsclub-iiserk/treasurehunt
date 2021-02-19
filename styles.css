@@ -43,9 +43,13 @@ a {
 
 html {
     background: #ffffff;
-    font-family: sans-serif, monospace;
+    font-family: 'Sorts Mill Goudy', serif, monospace;
     font-weight: normal;
     font-size: 16px;
+}
+
+body {
+    position: relative;
 }
 
 .global-container {
@@ -67,6 +71,17 @@ html {
     color: #333333;
 
     max-width: 100%;
+}
+
+.credits {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    color: #999999;
+    cursor: pointer;
+}
+.credits:hover {
+    color: #000000;
 }
 
 .button {
@@ -96,12 +111,15 @@ html {
 .spacer {
     height: 16px;
 }
+.spacer-top-bottom {
+    height: 64px;
+}
 
 .textblock {
-    font-family: 'Sorts Mill Goudy', serif, monospace;
     font-size: 1.2em;
-    width: 60%;
-    max-width: 75ch;
+    line-height: 1.4em;
+    width: 70%;
+    max-width: 70ch;
     margin: 1em;
 }
 .text-center {
@@ -138,7 +156,7 @@ html {
 
 @media screen and (max-width:600px) {
     .title-box {
-        font-size: 3em;
+        font-size: 4em;
     }
     .answer-form {
         flex-direction: column;

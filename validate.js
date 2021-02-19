@@ -13,8 +13,6 @@ function validate() {
         return;
     }
     var title = document.title;
-    console.log(title + answer);
     var hash = sha1(title + answer);
-    console.log(hash);
     window.location.href = "../" + hash + "/";
 }
