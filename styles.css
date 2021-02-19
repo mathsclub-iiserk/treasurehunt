@@ -73,22 +73,35 @@ body {
     max-width: 100%;
 }
 
-.links-bottom {
+.menu-links {
     position: absolute;
-    bottom: 8px;
-    right: 12px;
+    top: 1.5em;
+    right: 2em;
     max-width: 70%;
     text-align: center;
 }
-.links-bottom a {
+.menu-links a {
     font-size: 1.2em;
-    color: #999999;
+    color: #777777;
     font-style: italic; 
     margin: 0 8px;
 }
-.links-bottom a:hover {
+.menu-links a:hover {
     color: #000000;
     cursor: pointer;
+}
+.menu-links a.current {
+    position: relative;
+    pointer-events: none;
+}
+.menu-links a.current:after {
+    position: absolute;
+    content: "";
+    left: 4px;
+    right: 4px;
+    bottom: 0px;
+    height: 2px;
+    background: #cccccc;
 }
 
 .button {
@@ -112,7 +125,6 @@ body {
 
 .button:active {
     outline-color: #ffffff;
-
 }
 
 .spacer {
@@ -175,12 +187,12 @@ body {
     .answer-form * {
         margin: 5px;
     }
-    .links-bottom {
+    .menu-links {
         position: relative;
         bottom: 16px;
         right: auto;
     }
-    .links-bottom a {
+    .menu-links a {
         font-size: 1em;
     }
 }
