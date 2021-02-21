@@ -26,6 +26,8 @@ function validate() {
     if (solutions.includes(hash2)) {
         window.location.href = "../" + hash1 + "/";
     } else {
+        input.classList.remove("retry");
+        void input.offsetWidth;
         input.classList.add("retry");
     }
 }

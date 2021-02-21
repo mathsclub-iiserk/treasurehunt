@@ -137,6 +137,7 @@ body {
 .textblock {
     font-size: 1.2em;
     line-height: 1.4em;
+    color: #222222;
     width: 70%;
     max-width: 70ch;
     margin: 1em;
@@ -167,8 +168,24 @@ body {
     border: solid #000000 1px;
 }
 .answer-form input[type=text].retry {
-    border: solid #dd1122 1px;
-    box-shadow: 0 0 4px 0 #aa0022;
+    animation: 150ms shake ease;
+}
+
+@keyframes shake {
+    0% {
+        border: solid #dd1122 1px;
+        box-shadow: 0 0 4px 0 #aa0022;
+        /* transform: translateX(-1px); */
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    90% {
+        border: solid #dd1122 1px;
+    }
 }
 
 @media screen and (max-width:350px) {
