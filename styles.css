@@ -62,7 +62,7 @@ body {
 }
 
 .title-box {
-    margin: 0.2em 0.5em;
+    margin: 0.1em 0.5em;
     max-width: 100vw;
     text-align: center;
     
@@ -71,6 +71,21 @@ body {
     color: #333333;
 
     max-width: 100%;
+}
+.identity-box {
+    margin: 0em 0.5em 1em 0.5em;
+    max-width: 100vw;
+    text-align: center;
+    
+    font-family: 'Linden Hill', serif, monospace;
+    font-size: 2em;
+    color: #555555;
+
+    max-width: 100%;
+}
+.border-art img {
+    max-width: 40%;
+    pointer-events: none;
 }
 
 .menu-links {
@@ -91,6 +106,7 @@ body {
     cursor: pointer;
 }
 .menu-links a.current {
+    color: #222222;
     position: relative;
     pointer-events: none;
 }
@@ -99,7 +115,7 @@ body {
     content: "";
     left: 4px;
     right: 4px;
-    bottom: 0px;
+    bottom: -2px;
     height: 2px;
     background: #cccccc;
 }
@@ -146,6 +162,11 @@ body {
     text-align: center;
 }
 
+.text-block a {
+    text-decoration: none;
+    color: #222222 !important;
+}
+
 .answer-form {
     display: flex;
     flex-direction: row;
@@ -170,6 +191,9 @@ body {
 .answer-form input[type=text].retry {
     animation: 150ms shake ease;
 }
+.answer-form #submitButton.retry {
+    animation: 150ms shake ease, 250ms glow ease;
+}
 
 @keyframes shake {
     0% {
@@ -185,6 +209,16 @@ body {
     }
     90% {
         border: solid #dd1122 1px;
+    }
+}
+
+@keyframes glow {
+    0% {
+        background-color: #000000;
+        /* transform: translateX(-1px); */
+    }
+    45% {
+        background-color: #dd1122;
     }
 }
 

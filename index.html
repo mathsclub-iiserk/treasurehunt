@@ -12,20 +12,35 @@
     <div class="title-box">
         Treasure Hunt
     </div>
+    <div class="identity-box">
+        Identity, Maths Club of IISER Kolkata
+        <div class="border-art">
+            <img id="border-img" src="img/border.png" alt="">
+        </div>
+    </div>
     <div class="textblock">
-        Welcome to the treasure hunt!
+        Welcome to the online Mathematics Treasure Hunt!
         Press <i>start</i> to begin solving.
         Typing in the correct answer to each question will lead you to the next one.
-        Remember to keep track of your answers!
+        Remember to keep track of your answers.
+        <br>
+        <br>
+        Happy hunting!
     </div>
     <div class="spacer"></div>
-    <a class="button" href="./start/">Start</a>
+    <a class="button" id="startButton" href="#">COMING SOON!</a>
     <div class="spacer-top-bottom"></div>
     <div class="menu-links">
-        <a id="contact" class="current" href="../">Home</a>
+        <a id="home" class="current" href="./">Home</a>
         <a id="contact" href="./contact/">Contact Us</a>
-        <a id="credits" href="./credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
     </div>
+    <script src="https://sahasatvik.github.io/th/start.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var start = document.getElementById("startButton");
+        start.href = firstpage;
+        start.innerHTML = starttext;
+    </script>
 </div>
 </body>
 </html>
