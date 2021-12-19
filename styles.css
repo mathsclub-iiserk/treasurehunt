@@ -143,6 +143,10 @@ body {
     outline-color: #ffffff;
 }
 
+#registerButton {
+    margin-right: 1em;
+}
+
 .spacer {
     height: 16px;
 }
@@ -235,6 +239,16 @@ body {
     .identity-box {
         font-size: 1.5em;
         max-width: 80%;
+    }
+    .button-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #registerButton {
+        margin-right: 0;
+        margin-bottom: 1em;
     }
     .answer-form {
         flex-direction: column;
