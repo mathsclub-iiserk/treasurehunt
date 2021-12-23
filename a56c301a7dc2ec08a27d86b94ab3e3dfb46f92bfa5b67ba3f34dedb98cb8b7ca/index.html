@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css"> 
+    <script src="../sha256.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <title>Treasure Hunt - Question 9</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="spacer-top-bottom"></div>
+    <div class="spacer-top-bottom"></div>
+    <div class="title-box">
+        Q9: Extreme
+        <div class="border-art">
+            <img id="border-img" src="../img/border.png" alt="">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="textblock">
+        <i>You come upon a beautiful waterfall, and look down in hope of
+        something glittering but in vain. However, there is a small path made
+        along the banks of the stream. You wonder when this island was last
+        visited? Initial searches showed it to be uninhabited, but maybe there
+        are people in hiding? You take that path, wary of your surroundings.
+        But what you come across is not a living being, but an ancient relic. A
+        giant chessboard with a weird number etched into one square ... it's
+        Soham's turn to present you with a problem</i>
+    </div>
+    <div class="textblock">
+        Consider an $8\times 8$ chessboard, with a complex number written on
+        each of the squares. These numbers are arranged in such a way that the
+        number on each square is the average of the numbers in its surrounding
+        squares. However, Soham only shows you the square <i>f4</i> which
+        contains the entry $3+2i$. With a bright smile, he asks you how many
+        possible configurations of numbers on the squares are there for this
+        chessboard.
+    </div>
+    <div class="textblock">
+        <i>Answer Soham's question. If you are confused about which square has
+        been referred to, take a look at this article on <a
+        href="https://en.wikipedia.org/wiki/Algebraic_notation_(chess)">chess
+        notation</a>.</i>
+    </div>
+    <div class="spacer"></div>
+    <div class="answer-form">
+        <input type="text" name="answer" id="answer">
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script src="../validate.js"></script>
+    <div class="spacer-top-bottom"></div>
+    <div class="menu-links">
+        <a id="home" href="../">Home</a>
+        <a id="contact" href="../contact/">Contact</a>
+        <a id="credits" href="../credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+              throwOnError : false
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

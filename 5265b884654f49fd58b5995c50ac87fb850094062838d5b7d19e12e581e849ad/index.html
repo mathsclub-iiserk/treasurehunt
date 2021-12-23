@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css"> 
+    <script src="../sha256.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <title>Treasure Hunt - Question 15</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="spacer-top-bottom"></div>
+    <div class="spacer-top-bottom"></div>
+    <div class="title-box">
+        Q15: Divide
+        <div class="border-art">
+            <img id="border-img" src="../img/border.png" alt="">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="textblock">
+        <i>You found a strong, long rope! All of you manage to pass the bridge
+        by tying one end of it firmly to a strong boulder, the other to your
+        waist. However, now that all are safe, your mind wanders into the
+        realms of the abstract. Given the dimensions of the rope, wouldn't it
+        be more efficient to have more than 1 person cross the bridge at once?
+        What could be the maximum number of people you could shove into a
+        tight-knot so that no casualties occur? Bipradeep joins in your
+        musings, and you strike up a conversation.</i>
+    </div>
+    <div class="textblock">
+        Do there exist increasing arithmetic progressions with positive integer
+        terms, where each of these sequences do not contain any term of the
+        Fibonacci sequence?
+    </div>
+    <div class="textblock">
+        <i>If you think that there aren't any, your answer should be <b>no</b>.
+        Otherwise, find those sequences among these which have the least
+        possible common difference; among these, pick that sequence with the
+        least possible first term. Concatenate the first five terms of this
+        sequence as your answer. For example, if you think that the sequence
+        starts off with $2$, $4$, $6$, $8$, $10$, ..., then your answer should
+        be $246810$.</i>
+    </div>
+    <div class="spacer"></div>
+    <div class="answer-form">
+        <input type="text" name="answer" id="answer">
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script src="../validate.js"></script>
+    <div class="spacer-top-bottom"></div>
+    <div class="menu-links">
+        <a id="home" href="../">Home</a>
+        <a id="contact" href="../contact/">Contact</a>
+        <a id="credits" href="../credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+              throwOnError : false
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

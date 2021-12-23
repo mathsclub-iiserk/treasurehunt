@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css"> 
+    <script src="../sha256.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <title>Treasure Hunt - Question 8</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="spacer-top-bottom"></div>
+    <div class="spacer-top-bottom"></div>
+    <div class="title-box">
+        Q8: Positivity
+        <div class="border-art">
+            <img id="border-img" src="../img/border.png" alt="">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="textblock">
+        <i>Those are some crazy rocks over yonder. They lie in ascending order
+        of size, and each of their heights seem to have been subject to a very
+        specific scaling. If you go down the rocky ledge,you can see a similar
+        arrangement, but the scaling is exact in reverse order. What if you
+        stack them on top of one another? Is this the work of some gruesome
+        alien life that shall open a window to Edelweiss or Jotunheim?</i>
+    </div>
+    <div class="textblock">
+        The king gives you a polynomial of finite degree and positive integer
+        coefficients, denoted by $p(x)$. He imposes the law that
+
+        $$ p\left(\frac{1}{x}\right)\geq \frac{1}{p(x)} $$
+
+        for every $x &gt; 0$. However, great thinkers are riddled with the
+        precise conditions required to guarantee the same. Calvin crashes into
+        this great convention and shouts out, &ldquo;If the law holds when the
+        variable is unity, then it holds for all that we need!" and looks at
+        Hobbes with glee. Can the great thinkers give credit to Calvin?
+    </div>
+    <div class="textblock">
+        <i>Write <b>yes</b> if you agree with Calvin, <b>no</b> if not.</i>
+    </div>
+    <div class="spacer"></div>
+    <div class="answer-form">
+        <input type="text" name="answer" id="answer">
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script src="../validate.js"></script>
+    <div class="spacer-top-bottom"></div>
+    <div class="menu-links">
+        <a id="home" href="../">Home</a>
+        <a id="contact" href="../contact/">Contact</a>
+        <a id="credits" href="../credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+              throwOnError : false
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

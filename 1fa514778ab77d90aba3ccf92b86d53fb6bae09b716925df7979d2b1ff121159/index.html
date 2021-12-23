@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css"> 
+    <script src="../sha256.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <title>Treasure Hunt - Question 4</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="spacer-top-bottom"></div>
+    <div class="spacer-top-bottom"></div>
+    <div class="title-box">
+        Q4: Stumble
+        <div class="border-art">
+            <img id="border-img" src="../img/border.png" alt="">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="textblock">
+        <i>The raging storm won't die down. It has been going on for three
+        days at a stretch. Many crewmates have been plunged into the sea, or
+        have died in the sudden fire that broke out on deck. You are at
+        your wits end, as you sit in your cabin, waiting for the end. You
+        recall that one day you were dead drunk, and went out for a stroll at
+        night. If only you had never returned ...</i>
+    </div>
+    <div class="textblock">
+        A drunkard walks out of home at night. The probability that he takes a
+        step away from home is $p &gt; 1/2$, and the probability that he takes a
+        step towards home is $1 - p$. Once he is at home, he can only step out of
+        it. Given the night is infinitely long, how many times does the
+        drunkard reach home? 
+    </div>
+    <div class="textblock">
+        <i>If it you have a finite answer, write that number. Otherwise, write
+        <b>infinity</b>.</i>
+    </div>
+    <div class="spacer"></div>
+    <div class="answer-form">
+        <input type="text" name="answer" id="answer">
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script src="../validate.js"></script>
+    <div class="spacer-top-bottom"></div>
+    <div class="menu-links">
+        <a id="home" href="../">Home</a>
+        <a id="contact" href="../contact/">Contact</a>
+        <a id="credits" href="../credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+              throwOnError : false
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

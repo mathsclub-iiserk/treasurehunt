@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../styles.css"> 
+    <script src="../sha256.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+    
+    <title>Treasure Hunt - Question 17</title>
+</head>
+<body>
+<div class="global-container">
+    <div class="spacer-top-bottom"></div>
+    <div class="spacer-top-bottom"></div>
+    <div class="title-box">
+        Q17: Chance
+        <div class="border-art">
+            <img id="border-img" src="../img/border.png" alt="">
+        </div>
+    </div>
+    <div class="spacer"></div>
+    <div class="textblock">
+        <i>&ldquo;Only a step away from victory!" your crew murmurs as they
+        gasp for air, having been utterly defeated by the guardian of the
+        treasure. Some lament the absence of Jana, but with the show of skill
+        you beheld, even Jana's brute strength would not scathe him. That
+        menacing aura could be none other than the infamous Don Vito Corleone,
+        who was said to have escaped death and scrounged the world for his lost
+        position. He silently moves towards your stunted frame, and makes an
+        offer that you can't refuse.</i>
+    </div>
+    <div class="textblock">
+        Michael comes forward, prepared to take you on. Both of you will
+        partake in a blindfold shooting competition. There is a board set up; in each round,
+        the person whose bullet hits the board first gets 1 point. The first
+        person to gain a 2 point lead over their opponent wins the game; and
+        their life!
+        <br><br>
+        Vito is generous; he looks at your skills and gauges the probability of
+        you winning a round to be close to zero, <i>i.e.</i> exactly
+        $0.1729$. Now, Vito is a man of his word: he keeps his answers close,
+        but questions, closer. He believes that if you prove to be worthy of
+        the treasure by calculating your chances of winning, he will spare your
+        group and let you spend some time with your family.  With your pride as
+        captain, and the lives of your crew at stake, can you stand up to the
+        guardian boldly and give the correct answer? If you can, then do it!
+    </div>
+    <div class="textblock">
+        <i>What is your probability of winning the game? Round your answer to
+        4 decimal places. For example, if you think that the answer is
+        $0.12345$, then you should answer $0.1235$ (note the $4$ rounded up
+        to $5$).</i>
+    </div>
+    <div class="spacer"></div>
+    <div class="answer-form">
+        <input type="text" name="answer" id="answer">
+        <div class="button" id="submitButton" onclick="validate()">Submit</div>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script src="../validate.js"></script>
+    <div class="spacer-top-bottom"></div>
+    <div class="menu-links">
+        <a id="home" href="../">Home</a>
+        <a id="contact" href="../contact/">Contact</a>
+        <a id="credits" href="../credits/">Credits</a>
+        <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
+    </div>
+    <div class="spacer-top-bottom"></div>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false},
+                    {left: '\\(', right: '\\)', display: false},
+                    {left: '\\[', right: '\\]', display: true}
+                ],
+              throwOnError : false
+            });
+        });
+    </script>
+</div>
+</body>
+</html>

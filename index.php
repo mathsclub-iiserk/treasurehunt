@@ -22,43 +22,48 @@
     <div class="textblock">
         Welcome to the online Mathematics Treasure Hunt!
         You can participate individually, or in a group of up to 3 members.
-        <br>
-        <br>
+    </div>
+    <div class="textblock">
         The winning individual/team will receive a prize of <b>Rs. 512</b>!
-        <br>
-        <br>
+    </div>
+    <div class="textblock">
         The contest will open on <b>22 December, 2021</b> at <b>10:00 am</b>.
         Once it does, press <i>start</i> to begin solving.
         Typing in the correct answer to each question will lead you to the next one.
         Remember to keep track of your answers.
         The fastest to reach the end and submit their answers wins!
     </div>
-    <div class="spacer"></div>
     <div class="button-box">
-        <a class="button" id="registerButton"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSeMKy1Ytr3wZgnvOelqi1SKRgG7dKdFvf6eL9bLQxFRL9T7GQ/viewform?usp=sf_link">
-            Register Now
-        </a>
-        <a class="button" id="startButton" href="#">COMING SOON!</a>
+        <?php
+                if (time() < 1640147400) {
+                        echo '<a class="button" id="registerButton" href="https://docs.google.com/forms/d/e/1FAIpQLSeMKy1Ytr3wZgnvOelqi1SKRgG7dKdFvf6eL9bLQxFRL9T7GQ/viewform?usp=sf_link">Register</a>';
+                        echo '<a class="button disabled" id="startButton" href="#">Start</a>';
+                } else {
+                        echo '<a class="button disabled" id="registerButton" href="#">Register</a>';
+                        echo '<a class="button" id="startButton" href="./64a3e813963b3cd23f932b57199b106ad0bfaa932137925193ed6ce1254fbe6b/">Start</a>';
+                }
+        ?>
     </div>
-    <div class="spacer"></div>
+    <div class="textblock">
+        The contest will officially close at 10:00 pm on the same day. Expect a
+        combination of puzzles, riddles, and problems; but beware! If you are
+        not careful, you might take a false turn and lose valuable time!
+    </div>
+    <div class="textblock">Happy hunting!</div>
     <div class="textblock">
         <i>This event has been organized by Identity, the Maths Club of IISER
-        Kolkata as part of our National Mathematics Day celebrations.</i>
+        Kolkata as part of our National Mathematics Day celebrations. The date
+        22 December, 2021 marks the 134th birth anniversary of the great Indian
+        mathematician Srinivasa Ramanujan.</i>
     </div>
     <div class="spacer-top-bottom"></div>
     <div class="menu-links">
         <a id="home" class="current" href="./">Home</a>
-        <a id="contact" href="./contact/">Contact Us</a>
+        <a id="contact" href="./contact/">Contact</a>
+        <a id="credits" href="./credits/">Credits</a>
         <a id="identity" href="https://www.iiserkol.ac.in/~maths.club/">Identity</a>
     </div>
     <div class="spacer-top-bottom"></div>
-    <script src="https://sahasatvik.github.io/th/start.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        var start = document.getElementById("startButton");
-        start.href = firstpage;
-        start.innerHTML = starttext;
-    </script>
 </div>
 </body>
 </html>

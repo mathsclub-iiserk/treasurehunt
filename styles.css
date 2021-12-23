@@ -50,6 +50,9 @@ html {
 
 body {
     position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+                url(./img/parchment.jpg);
+    background-repeat: repeat;
 }
 
 .global-container {
@@ -128,21 +131,32 @@ body {
 
     font-family: monospace;
     font-size: 1.2em;
+    background: #ffffff;
     color: #000000;
     text-transform: uppercase;
 
     transition: 75ms background ease-out;
 }
 .button:hover {
-    outline-color: #000000;
-    background: #000000;
+    outline-color: #1a1a1a;
+    background: #1a1a1a;
     color: #ffffff;
 }
-
 .button:active {
     outline-color: #ffffff;
 }
 
+.button.disabled {
+    background: #999999 !important;
+    color: #ffffff !important;
+    outline-color: #999999 !important;
+    pointer-events: none;
+}
+
+.button-box {
+    padding: 1em;
+    margin: 1em 0;
+}
 #registerButton {
     margin-right: 1em;
 }
@@ -160,15 +174,18 @@ body {
     color: #222222;
     width: 70%;
     max-width: 70ch;
-    margin: 1em;
+    margin: 0.5em 1em;
 }
 .text-center {
     text-align: center;
 }
 
-.text-block a {
-    text-decoration: none;
-    color: #222222 !important;
+.textblock a {
+    text-decoration: underline;
+}
+.textblock.riddle {
+    width: 60%;
+    margin-left: 5em;
 }
 
 .answer-form {
@@ -203,7 +220,6 @@ body {
     0% {
         border: solid #dd1122 1px;
         box-shadow: 0 0 4px 0 #aa0022;
-        /* transform: translateX(-1px); */
     }
     25% {
         transform: translateX(-2px);
@@ -219,11 +235,23 @@ body {
 @keyframes glow {
     0% {
         background-color: #000000;
-        /* transform: translateX(-1px); */
     }
     45% {
         background-color: #dd1122;
     }
+}
+
+.block-image {
+    text-align: center;
+    margin: 1em 0;
+}
+.block-image img {
+    max-width: 80%;
+    margin: auto;
+}
+
+.katex {
+    font-size: 1em !important;
 }
 
 @media screen and (max-width:350px) {
@@ -239,16 +267,6 @@ body {
     .identity-box {
         font-size: 1.5em;
         max-width: 80%;
-    }
-    .button-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    #registerButton {
-        margin-right: 0;
-        margin-bottom: 1em;
     }
     .answer-form {
         flex-direction: column;
